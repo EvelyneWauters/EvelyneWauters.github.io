@@ -1,0 +1,44 @@
+/* make sidebar nav vertical */
+@media (min-width: 768px) {
+    .sidebar-nav .navbar .navbar-collapse {
+        padding-top: 2rem;
+        max-height: none;
+    }
+    .sidebar-nav .navbar ul {
+        float: none;
+    }
+    .sidebar-nav .navbar ul:not {
+        display: block;
+    }
+    .sidebar-nav .navbar li {
+        float: none;
+        display: block;
+    }
+    .sidebar-nav .navbar li a {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.blueskies{
+    background-image: url("http://nhtheatreawards.org/Data/Sites/1/aaImages/graphics/Sky%20and%20Clouds/beautiful_sky-dsc01468-dws.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hollywoodbw{
+    background-image: url(http://www.happi927.com/wp-content/uploads/2015/04/richard-lund-hollywood-sign-at-night.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+        }
+
+body{
+    padding-top: 50px;
+}
+
+.whitebackground{
+    padding: 1rem 1rem 2rem 1rem;
+    margin-top: 3rem;
+    background-color: rgba(255, 255, 255, 0.66);
+    border-radius: 25px;
+}
