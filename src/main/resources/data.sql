@@ -172,18 +172,18 @@ insert into quantity (quantity_metric, base_unit) VALUES (100, 'gram');
 
 
 insert into ingredient(name, foodtype, quantity_id) VALUES
-  ('mozarella', 'zuivel', 1);
+  ('mozarella', 'ZUIVEL', 1);
 insert into ingredient(name, quantity_id) VALUES
   ('suiker', 2);
 
 
 
-insert into recipe(name, duration_in_minutes, description, meal_type, how_to) VALUES
-  ('home made pizza', 50, 'pizza-quiche à la flixxi', 'dinner',
+insert into recipe(name, duration_In_Minutes, description, meal_type, how_to) VALUES
+  ('home made pizza', '50', 'pizza-quiche à la flixxi', 'DINNER',
   'flans alles bij elkaar tot je een pizza krijgt!');
 
-insert into recipe(name, duration_in_minutes, description, meal_type, how_to) VALUES
-  ('tiramisu met peer', 40, 'mmmmmmmm', 'DESERT', 'nog meer flansen in de keukenmachine en whops!');
+insert into recipe(name, duration_In_Minutes, description, meal_type, how_to) VALUES
+  ('tiramisu met peer', '40', 'mmmmmmmm', 'DESERT', 'nog meer flansen in de keukenmachine en whops!');
 
 insert into recipe.recipe_ingredient_list (recipe_id, ingredient_list_id) VALUES (1,1);
 

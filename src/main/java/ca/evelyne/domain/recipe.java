@@ -12,16 +12,16 @@ public class Recipe {
     //class variables
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    public Integer id;
-    public String name;
-    public int durationInMinutes;
+    private Integer id;
+    private String name;
+    private int durationInMinutes;
     @Enumerated (EnumType.STRING)
-    public MealType mealType;
+    private MealType mealType;
     @OneToMany
-    public List<Ingredient> ingredientList;
-    public String description;
+    private List<Ingredient> ingredientList;
+    private String description;
     @Lob
-    public String howTo;
+    private String howTo;
 
 
     //constructor
@@ -53,12 +53,12 @@ public class Recipe {
         this.name = name;
     }
 
-    public int getDuration() {
+    public int getDurationInMinutes() {
         return durationInMinutes;
     }
 
-    public void setDuration(int duration) {
-        this.durationInMinutes = duration;
+    public void setDurationInMinutes(int durationInMinutes) {
+        this.durationInMinutes = durationInMinutes;
     }
 
     public MealType getMealType() {

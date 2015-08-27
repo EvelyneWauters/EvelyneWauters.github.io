@@ -12,12 +12,12 @@ public class Ingredient {
     //class variables
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    public Integer id;
-    public String name;
+    private Integer id;
+    private String name;
     @OneToOne
-    public Quantity quantity;
+    private Quantity quantity;
     @Enumerated (EnumType.STRING)
-    public Foodtype foodtype;
+    private Foodtype foodtype;
 
     //constructor
     public Ingredient() {

@@ -13,9 +13,9 @@ public class Quantity {
     //class variables
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    public Integer id;
-    public int quantityMetric;
-    public String baseUnit;
+    private Integer id;
+    private int quantityMetric;
+    private String baseUnit;
 
 
     //constructor

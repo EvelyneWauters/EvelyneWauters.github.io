@@ -37,9 +37,8 @@ body{
 }
 
 .foodhome{
-    background-image: url(http://media.tumblr.com/tumblr_m6cqzd18ow1qm4rc3.jpg), url(http://backgrounds.picaboo.com/download/ef/ff/effcd84293cb440884df26dbf3b42bff/turquoise_three.jpg);
-    background-position: right bottom, left top;
-    background-size: 100px 100px, cover;
+    background-image: url(http://backgrounds.picaboo.com/download/ef/ff/effcd84293cb440884df26dbf3b42bff/turquoise_three.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
