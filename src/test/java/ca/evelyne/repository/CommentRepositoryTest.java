@@ -21,7 +21,7 @@ import static org.junit.Assert.assertEquals;
 public class CommentRepositoryTest {
     
     @Autowired
-    CommentRepository commentRepository; 
+    CommentRepository commentRepository;
     
     @Test
     public void testGetCommentBymMovieId() throws Exception    {

@@ -1,7 +1,6 @@
 package ca.evelyne.controller;
 
 
-import ca.evelyne.domain.movie.Genre;
 import ca.evelyne.domain.person.Actor;
 import ca.evelyne.domain.person.Gender;
 import ca.evelyne.domain.person.MovieCharacter;

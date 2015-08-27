@@ -1,6 +1,5 @@
 package ca.evelyne.controller;
 
-import ca.evelyne.domain.movie.Genre;
 import ca.evelyne.domain.movie.Movie;
 import ca.evelyne.domain.person.Actor;
 import ca.evelyne.domain.person.MovieCharacter;
@@ -13,9 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;

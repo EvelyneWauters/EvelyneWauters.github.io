@@ -1,11 +1,11 @@
 package ca.evelyne.controller;
 
 import ca.evelyne.domain.movie.Comment;
-import ca.evelyne.domain.movie.Movie;
-import ca.evelyne.domain.person.Actor;
-import ca.evelyne.domain.person.MovieCharacter;
 import ca.evelyne.domain.person.User;
-import ca.evelyne.repository.*;
+import ca.evelyne.repository.ActorRepository;
+import ca.evelyne.repository.CommentRepository;
+import ca.evelyne.repository.MovieRepository;
+import ca.evelyne.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
@@ -14,8 +14,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.*;
-
-import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @Controller
 @RequestMapping("/comment")
@@ -27,7 +25,7 @@ public class CommentController {
     ActorRepository actorRepository;
 
     @Autowired
-    MovieRepository  movieRepository;
+    MovieRepository movieRepository;
 
     @Autowired
     UserRepository userRepository;
@@ -76,9 +74,5 @@ public class CommentController {
         }
         return "redirect:/comment/all?id=" + comment.getMovie().getId();
     }
-
-
-
-
 
 }
