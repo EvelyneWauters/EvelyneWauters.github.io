@@ -9,13 +9,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">Let's move to Hollywood!</a>
+      <a class="navbar-brand" href="/">What's for dinner tonight?</a>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/movie/allsortonrating">Top movies</a></li>
-        <li><a href="/movie/all">All movies</a></li>
-        <li><a href="/actor/all">All actors</a></li>
+        <li class="active"><a href="/recipe/allsortonrating">Top recipes</a></li>
+        <li><a href="/recipe/all">All recipes</a></li>
+        <li><a href="/actor/all">Choose by ingredient</a></li>
         <li><a href="/user/form">Register now!</a></li>
 
       </ul>

@@ -169,23 +169,30 @@ insert into comment(content, date_added, movie_id, user_id) values
 
 insert into quantity (quantity_metric, base_unit) VALUES (1, 'bol');
 insert into quantity (quantity_metric, base_unit) VALUES (100, 'gram');
-
+insert into quantity (quantity_metric) VALUES (1);
 
 insert into ingredient(name, foodtype, quantity_id) VALUES
   ('mozarella', 'ZUIVEL', 1);
+insert into ingredient(name, foodtype, quantity_id) VALUES
+  ('paprika', 'GROENTEN', 3);
+insert into ingredient(name, foodtype) VALUES
+  ('pizzakruiden', 'KRUIDEN');
 insert into ingredient(name, quantity_id) VALUES
   ('suiker', 2);
 
 
-
-insert into recipe(name, duration_In_Minutes, description, meal_type, how_to) VALUES
-  ('home made pizza', '50', 'pizza-quiche à la flixxi', 'DINNER',
+insert into recipe(name, duration_In_Minutes, description, meal_type, recipe_rating, how_to) VALUES
+  ('home made pizza', '50', 'pizza-quiche à la flixxi', 'DINNER', 3,
   'flans alles bij elkaar tot je een pizza krijgt!');
 
-insert into recipe(name, duration_In_Minutes, description, meal_type, how_to) VALUES
-  ('tiramisu met peer', '40', 'mmmmmmmm', 'DESERT', 'nog meer flansen in de keukenmachine en whops!');
+insert into recipe(name, duration_In_Minutes, description, meal_type, recipe_rating, how_to) VALUES
+  ('tiramisu met peer', '40', 'mmmmmmmm', 'DESERT', 3,
+  'nog meer flansen in de keukenmachine en whops!');
 
 insert into recipe.recipe_ingredient_list (recipe_id, ingredient_list_id) VALUES (1,1);
+insert into recipe.recipe_ingredient_list (recipe_id, ingredient_list_id) VALUES (1,2);
+insert into recipe.recipe_ingredient_list (recipe_id, ingredient_list_id) VALUES (1,3);
+insert into recipe.recipe_ingredient_list (recipe_id, ingredient_list_id) VALUES (2,4);
 
 
 

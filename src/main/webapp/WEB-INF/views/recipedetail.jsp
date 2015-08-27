@@ -39,7 +39,7 @@
         <c:otherwise>
           <table class="table table-hover">
             <tr>
-            <th>ingredients         <a href="recipeaddingredient"><span class="glyphicon glyphicon-pencil"/></a> "</th>
+            <th>ingredients         <a href="recipeaddingredient"><span class="glyphicon glyphicon-pencil"/></a> </th>
             </tr>
 
             <c:forEach var="ingredients" items="${recipe.ingredientList}">
